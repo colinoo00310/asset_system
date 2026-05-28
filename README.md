@@ -1,8 +1,17 @@
 # asset_system
 基于Python Thinker+SQLite完成的资产管理系统，主要功能包括：资产管理、部门管理、用户管理、资产地图展示功能
 
-项目整体结构：
-asset_system2/
+登录界面展示
+<img width="1802" height="1247" alt="登录界面展示" src="https://github.com/user-attachments/assets/9c900181-fad8-49b4-97c4-2f40a4f8b746" />
+
+主界面展示
+<img width="1802" height="1247" alt="主界面展示" src="https://github.com/user-attachments/assets/fa018f01-efb5-4d2f-b535-43eec76b6904" />
+
+资产地图界面展示
+<img width="2307" height="1343" alt="资产地图界面展示" src="https://github.com/user-attachments/assets/0f1c0ab4-af11-4e3b-b516-78b5671ec369" />
+
+项目整体结构
+1.asset_system/
 ├── main.py                         # 主程序入口
 │
 ├── config/                         # 配置模块
