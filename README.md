@@ -1,5 +1,12 @@
 # asset_system
-基于Python Thinker+SQLite完成的资产管理系统，主要功能包括：资产管理、部门管理、用户管理、资产地图展示功能
+基于Python Thinker+SQLite开发的资产管理系统
+-  **用户认证**：安全的登录系统和权限管理
+-  **资产管理**：完整的资产增删改查操作，支持资产分类和状态跟踪
+-  **部门管理**：灵活的组织架构管理
+-  **用户管理**：用户角色和权限控制
+-  **地图展示**：资产地理位置可视化
+-  **数据统计**：主界面资产状态统计报表
+
 
 登录界面展示
 <img width="1802" height="1247" alt="登录界面展示" src="https://github.com/user-attachments/assets/9c900181-fad8-49b4-97c4-2f40a4f8b746" />
@@ -10,6 +17,7 @@
 资产地图界面展示
 <img width="2307" height="1343" alt="资产地图界面展示" src="https://github.com/user-attachments/assets/0f1c0ab4-af11-4e3b-b516-78b5671ec369" />
 
+```text
 项目整体结构
 1.asset_system/
 ├── main.py                         # 主程序入口
@@ -45,8 +53,17 @@
 │       ├── map_launcher.py        # 地图启动器
 │       ├── map_standalone.py       # 地图独立进程
 │       └── location_picker.py      # 位置选择器
+```
 
-桌面端exe打包终端命令：pyinstaller main.spec
+```text
+Requirements:
+PyQt5>=5.15.9
+PyQtWebEngine>=5.15.6
+requests>=2.28.0
+Pillow>=9.5.0
+```
+
+打包为可执行文件终端命令：pyinstaller asset_system.spec
 注意：assets pro.db为数据库文件，不可随意删除，否则会导致数据丢失！！
 dist文件夹要放在英文路径下，否则“地图展示”功能易失效！！
 
